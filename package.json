@@ -7,16 +7,19 @@
 	"description": "What am I about?",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"start": "node server.js",
+		"server": "nodemon server.js",
+		"tunnel": "ngrok http 3000"
 	},
 	"dependencies": {
-		"express": "^5.0.0-alpha.2",
-		"body-parser": "^1.15.2",
-		"mocha": "^3.1.0",
+		"body-parser": "^1.19.0",
 		"chai": "^3.5.0",
-		"chai-http": "^3.0.0",
-		"zombie": "^4.2.1",
-		"cors": "^2.8.1"
+		"chai-http": "^4.3.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"mocha": "^7.1.0",
+		"ngrok": "^3.2.7",
+		"zombie": "^6.1.4"
 	},
 	"engines": {
 		"node": "4.4.5"
@@ -30,5 +33,8 @@
 		"hyperdev",
 		"express"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"nodemon": "^2.0.2"
+	}
 }
